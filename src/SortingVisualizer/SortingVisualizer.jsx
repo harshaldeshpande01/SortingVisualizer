@@ -38,6 +38,7 @@ export default class SortingVisualizer extends React.Component {
       array.push(randomIntFromInterval(10, HEIGHT - 72));
     }
     this.setState({ array });
+    // console.log(array);
   }
 
   mergeSort() {
@@ -76,6 +77,7 @@ export default class SortingVisualizer extends React.Component {
         document.getElementById('bb').removeAttribute("disabled");
       }, animations.length * animationSpeed)
     }
+    // console.log(this.state.array);
   }
 
   countingSort() {
