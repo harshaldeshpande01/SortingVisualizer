@@ -235,11 +235,14 @@ export default class SortingVisualizer extends React.Component {
             <div
               className="array-bar"
               key={idx}
+              // onMouseOver={() => {console.log(value)}}
               style={{
                 backgroundColor: PRIMARY_COLOR,
                 height: `${value}px`,
                 //marginBottom: `${margin}px`, 
-              }}></div>
+              }}
+              >
+              </div>
           ))}
           {/* <button onClick={() => this.testSortingAlgorithms()}>
             Test Sorting Algorithms (BROKEN)
